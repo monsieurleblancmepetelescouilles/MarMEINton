@@ -12,6 +12,7 @@
 
 <script type="text/javascript" charset="utf-8" src="../View/js/dataTables.bootstrap.js"></script>
 <script type="text/javascript" charset="utf-8" src="../View/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../View/js/user.js"></script>
 
 </head>
 

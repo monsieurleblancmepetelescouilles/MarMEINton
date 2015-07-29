@@ -17,6 +17,8 @@ echo " ".$mec->name;
 
 include 'recherche.php';
 
+echo '<div id="test">On test des trucs</div> <button type="button" onclick="loadXMLDoc()">Change Content</button>';
+
 
 echo '<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
