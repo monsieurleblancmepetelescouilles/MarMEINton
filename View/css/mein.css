@@ -1,0 +1,61 @@
+#search
+{
+
+	display : block;
+	margin : auto;
+	width : 100%;
+
+	height: 80px;
+	
+	max-width : 650px;
+	
+
+	padding : 10px;
+	border: 2.5px solid rgba(193, 134, 88, 0.9);
+	border-radius: 8px;				/*contours arrondis#C18658*/
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+
+	background-color: rgba(0, 0, 0, 0.8) ;
+	color: #C18658;
+	text-align: center;
+
+
+}
+
+#ecran
+{
+	width : 80%;
+	background-image: url("../img/nourriture.jpg");
+	margin: auto;
+
+}
+
+body
+{
+	background-color: #A45254;
+
+}
+
+footer
+{
+	display : block;
+	margin : auto;
+	width : 100%;
+
+	padding: 20px;
+	border: 2.5px solid rgba(193, 134, 88, 1);
+	border-radius: 8px;				/*contours arrondis#C18658*/
+    font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+
+	background-color: rgba(0, 0, 0, 1) ;
+	color: #C18658;
+	text-align: center;
+
+}
+
+#searchInput
+{
+	width: 80%;
+}
