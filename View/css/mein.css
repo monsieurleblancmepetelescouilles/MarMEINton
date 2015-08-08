@@ -65,3 +65,36 @@ footer
 
 	background-color: white; 
 }
+#article
+{
+	background-color: white;
+	text-align: center;
+}
+
+
+#news
+{
+        border: 2px solid black;
+        padding : 8px;
+        margin-bottom : 10px;
+        border-radius: 5px;
+
+
+}
+#titrenews
+{
+    padding : -35px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#infonews
+{
+    font-size : 0.8em;
+    float : right;
+    margin-top : -10px;
+}
+#buttonNewNews
+{
+	float : right;
+}
+

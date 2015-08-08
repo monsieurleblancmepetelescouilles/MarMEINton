@@ -1,6 +1,4 @@
-<?php
-//include "header_php.php";
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,8 +15,27 @@
 <script type="text/javascript" charset="utf-8" src="../View/js/jquery-2.1.3.min.js"></script>
 
 </head>
+<?php
 
-<!-- MENU ?? -->
+include '../Controller/DerController.php';
 
-<body>
-	<div id="ecran">
+
+if (insertNews())
+	echo 'Votre news à bien été publiée.';
+else
+	echo 'Echec de publication de votre news !';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

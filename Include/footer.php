@@ -1,6 +1,6 @@
 </ecran>
 </body>
 <footer>
-MARMITON, 2015-2015.
+<i class="fa fa-copyright"></i> 2015-2015 Marmiton. All Right Reserved.
 </footer>
 </html>

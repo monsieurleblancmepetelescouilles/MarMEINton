@@ -68,6 +68,11 @@ $('#form_up_user').submit(function() {
 
 function loadXMLDoc()
 {
+
+	var str = document.getElementById("searchInput").value;
+	if (str == "")
+		return;
+	
 var xmlhttp;
 if (window.XMLHttpRequest)
   {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -87,3 +92,15 @@ xmlhttp.onreadystatechange=function()
 xmlhttp.open("GET","ajax.txt",true);
 xmlhttp.send();
 }
+
+   function toggleNewNews() {
+
+         window.open('../Include/createNews.php','Nouvelle News','menubar=no, scrollbars=no, top=100, left=100, width=350, height=400');
+
+    }
+
+
+    function retourIndex()
+    {
+    	location.href = "index.php";
+    }

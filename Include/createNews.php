@@ -1,5 +1,5 @@
 <?php
-//include "header_php.php";
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,5 +20,17 @@
 
 <!-- MENU ?? -->
 
-<body>
-	<div id="ecran">
+
+
+
+<form id="createNewsForm" action="validateNews.php" method="POST">
+
+		<label> Auteur : <input type="text" name="author" id="newsAuthor" class="form-control" placeholder="Nom" required></label> <br \>
+		<label> Titre : <input type="text" name="title" class="form-control" id="newsTitle" placeholder="Titre" required></label> <br \>
+		
+		<label> Texte : <textarea name="text" class="form-control" rows="6" cols="42" id="newsText" required></textarea></label> <br \>
+		<button type ="submit" id = "opentoast" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-envelope"></span> Envoyer</button> 
+
+		<button type = "reset" class="btn btn-warning btn-xs">Effacer</button>
+
+</form>

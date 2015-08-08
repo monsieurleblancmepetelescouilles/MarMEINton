@@ -13,8 +13,22 @@ class MarmitonUser
 
 
 	}
+}
 
-	
+class News
+{
+	public $author;
+	public $title;
+	public $text;
+	public $date;
+
+	public function News($nom, $titre, $texte, $datePublication)
+	{
+		$author = $nom;
+		$title = $titre;
+		$text = $texte;
+		$date = $datePublication;
+	}
 }
 
 
