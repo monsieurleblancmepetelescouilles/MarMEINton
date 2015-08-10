@@ -1,45 +1,30 @@
 <?php
 
-include '../Include/header.php';
-include '../Model/class.php';
+  include '../Include/header.php';
+  include '../Model/class.php';
 
+  echo 'Bonjour';
 
-echo 'Bonjour';
+  $mec = new MarmitonUser("zedfg");
 
-$mec = new MarmitonUser("zedfg");
+  //$mec->MarmitonUser::MarmitonUser("azeae");
 
-//$mec->MarmitonUser::MarmitonUser("azeae");
+  $mec->name = "Michel";
 
-$mec->name = "Michel";
+  echo " ".$mec->name;
 
-echo " ".$mec->name;
+  include 'recherche.php';
 
+  echo '<div id="test">';
 
-include 'recherche.php';
+  include '../Include/news.php';
 
-echo '<div id="test">';
+  echo '</div>';
+  echo '<button type="button" onclick="show_prompt()">Change Content</button>';
 
-include '../Include/news.php';
+  echo '<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
-echo '</div>';
-echo '<button type="button" onclick="show_prompt()">Change Content</button>';
-
-
-echo '<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br />';
-
-
-
-
-
-
-
-
-
-
-
-
-
-include '../Include/footer.php';
+  include '../Include/footer.php';
 ?>
