@@ -1,30 +1,30 @@
 <?php
-
   include '../Include/header.php';
   include '../Model/class.php';
+?>
 
-  echo 'Bonjour';
+  <div id="title">
+    <h1 class="title"> Marmiton </h1>
+  </div>
 
-  $mec = new MarmitonUser("zedfg");
+    <?php
+      include 'recherche.php';
+    ?>
 
-  //$mec->MarmitonUser::MarmitonUser("azeae");
+    <div id="principal">
 
-  $mec->name = "Michel";
+      <?php
+        include '../Include/news.php';
+      ?>
 
-  echo " ".$mec->name;
+    </div>
 
-  include 'recherche.php';
+  <button type="button" onclick="show_prompt()">Change Content</button>
 
-  echo '<div id="test">';
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/>
 
-  include '../Include/news.php';
-
-  echo '</div>';
-  echo '<button type="button" onclick="show_prompt()">Change Content</button>';
-
-  echo '<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <br /><br /><br /><br /><br /><br /><br /><br /><br />';
-
+<?php
   include '../Include/footer.php';
 ?>

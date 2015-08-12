@@ -1,39 +1,46 @@
 <?php
-  function checkPOST()
-  {
-    if (isset($_POST['author']) && isset($_POST['title']) && isset($_POST['text']))
-    {
-      return true;
-    }
-    return false;
-  }
 
-  function insertNews()
-  {
-    date_default_timezone_set('Europe/Paris');
-    $today = date('Y-m-d', time());
+function checkPOST()
+{
+	if (isset($_POST['author']) && isset($_POST['title']) && isset($_POST['text']))
+		return true;
+	return false;
+}
 
-    if (!checkPOST())
-    {
-      return false;
-    }
 
-    try
-    {
-      $bdd = new PDO('mysql:host=localhost;dbname=marmiton', 'root', '');
-      $bdd->query("SET NAMES 'utf8'");
-    }
+function insertNews()
+{
+	date_default_timezone_set('Europe/Paris');
+	$today = date('Y-m-d', time());
 
-    catch(Exception $e)
-    {
-      die('Erreur : '.$e->getMessage());
-    }
+	if (!checkPOST()) 
+		return false;
+	try
+	{
+		$bdd = new PDO('mysql:host=localhost;dbname=marmiton', 'root', '');
+		$bdd->query("SET NAMES 'utf8'");
 
-    $write = $bdd->prepare('INSERT INTO marmiton.news (Id, author, title, text, date) VALUES (NULL, :lepseudo, :letitre, :letext, :ladate);');
-    $bool = $write->execute(array('lepseudo' => $_POST['author'], 'letitre' => $_POST['title'], 'letext' => $_POST['text'], 'ladate' => $today ));
+	}
+	catch(Exception $e)
+	{
+	        die('Erreur : '.$e->getMessage());
+	}
 
-    $write->closeCursor();
+	$write = $bdd->prepare('INSERT INTO marmiton.news (Id, author, title, text, date) VALUES (NULL, :lepseudo, :letitre, :letext, :ladate);');
+	$bool = $write->execute(array('lepseudo' => $_POST['author'], 'letitre' => $_POST['title'], 'letext' => $_POST['text'], 'ladate' => $today ));
 
-    return $bool;
-  }
+	$write->closeCursor();
+
+	return $bool;
+	}
+
+
+
+
+
+
+
+
+
+
 ?>

@@ -3,8 +3,8 @@
 ?>
 <body>
 	<?php 
-		echo "<script type=\"text/javascript\">display('".Login::getInstance()->getDefault()."');</script>";
-  ?>
+			echo "<script type=\"text/javascript\">display('".Login::getInstance()->getDefault()."');</script>";
+		?>
 <div id="alert" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

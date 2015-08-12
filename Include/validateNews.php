@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +19,23 @@
 
 include '../Controller/DerController.php';
 
+
 if (insertNews())
 	echo 'Votre news à bien été publiée.';
 else
 	echo 'Echec de publication de votre news !';
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>

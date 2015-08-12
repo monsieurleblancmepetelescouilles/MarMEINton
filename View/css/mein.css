@@ -1,100 +1,121 @@
-#search
-{
+#search {
+    text-align: center;
 
-	display : block;
-	margin : auto;
-	width : 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 90px;
+    width: 100%;
+    height: 80px;
+    max-width: 650px;
 
-	height: 80px;
-	
-	max-width : 650px;
-	
-
-	padding : 10px;
-	border: 2.5px solid rgba(193, 134, 88, 0.9);
-	border-radius: 8px;				/*contours arrondis#C18658*/
+    padding: 10px;
+    border: 2.5px solid rgba(193, 134, 88, 0.9);
+    border-radius: 8px; /*contours arrondis#C18658*/
     font-size: 2em;
     font-family: "Times New Roman", Times, serif;
 
-	background-color: rgba(0, 0, 0, 0.8) ;
-	color: #C18658;
-	text-align: center;
-
-
+    background-color: rgba(50, 50, 50, 0.98);
+    color: #C18658;
 }
 
-#ecran
-{
-	width : 80%;
-	background-image: url("../img/nourriture.jpg");
-	margin: auto;
+#ecran {
+    width: 80%;
+    background-image: url("../img/nourriture.jpg");
+    background-size: 100%;
 
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border-radius: 5px;
+    border: solid 5px #a77154;
 }
 
-body
-{
-	background-color: #A45254;
-
+body {
+    background-color: #de9b72;
+    text-align: justify;
 }
 
-footer
-{
-	display : block;
-	margin : auto;
-	width : 100%;
+.title {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 140px;
+    color: orangered;
 
-	padding: 20px;
-	border: 2.5px solid rgba(193, 134, 88, 1);
-	border-radius: 8px;				/*contours arrondis#C18658*/
+    background-color: transparent;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 750px;
+    margin: auto;
+
+    border-radius: 5px;
+    border: 2px solid #a3532b
+}
+
+#title {
+    padding: 50px;
+}
+
+.news {
+    text-align: center;
+    background-color: #bd362f;
+    font-size: 7em;
+    color: #0044cc;
+}
+
+.textnews {
+    font-size: 16px;
+}
+
+footer {
+    display: block;
+    margin: auto;
+    width: auto;
+
+    padding: 20px;
+    border: 2.5px solid rgba(193, 134, 88, 1);
+    border-radius: 8px; /*contours arrondis#C18658*/
     font-size: 1.5em;
     font-family: "Times New Roman", Times, serif;
 
-	background-color: rgba(0, 0, 0, 1) ;
-	color: #C18658;
-	text-align: center;
-
+    background-color: rgba(0, 0, 0, 1);
+    color: #C18658;
+    text-align: justify;
 }
 
-#searchInput
-{
-	width: 80%;
+#searchInput {
+    width: 80%;
 }
 
-#test
-{
-
-	background-color: white; 
-}
-#article
-{
-	background-color: white;
-	text-align: center;
+#article {
+    background-size: 50%;
+    text-align: justify;
+    border-radius: 5px;
 }
 
-
-#news
-{
-        border: 2px solid black;
-        padding : 8px;
-        margin-bottom : 10px;
-        border-radius: 5px;
-
-
+#news {
+    background-color: rgba(222, 222, 222, 0.95);
+    border: 2px solid dimgrey;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
 }
-#titrenews
-{
-    padding : -35px;
+
+#titrenews {
+    padding: -35px;
     margin-top: -10px;
     margin-bottom: -10px;
+    text-align: center;
 }
-#infonews
-{
-    font-size : 0.8em;
-    float : right;
-    margin-top : -10px;
+
+#infonews {
+    font-size: 0.8em;
+    float: right;
+    margin-top: -10px;
 }
-#buttonNewNews
-{
-	float : right;
+
+#buttonNewNews {
+    float: right;
 }
 

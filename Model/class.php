@@ -1,40 +1,30 @@
 <?php
 
+  class MarmitonUser
+  {
+    public $name;
+    public $email;
 
-class MarmitonUser
-{
+    public function MarmitonUser($nom)
+    {
+      $name = $nom;
+    }
+  }
 
-	public $name;
-	public $email;
+  class News
+  {
+    public $author;
+    public $title;
+    public $text;
+    public $date;
 
-	public function MarmitonUser($nom)
-	{
-		$name = $nom;
-
-
-	}
-}
-
-class News
-{
-	public $author;
-	public $title;
-	public $text;
-	public $date;
-
-	public function News($nom, $titre, $texte, $datePublication)
-	{
-		$author = $nom;
-		$title = $titre;
-		$text = $texte;
-		$date = $datePublication;
-	}
-}
-
-
-
-
-
-
+    public function News($nom, $titre, $texte, $datePublication)
+    {
+      $author = $nom;
+      $title = $titre;
+      $text = $texte;
+      $date = $datePublication;
+    }
+  }
 
 ?>
